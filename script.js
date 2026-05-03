@@ -37,6 +37,9 @@ card.classList.add('show');
 }
 });
 });
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
 
 function validateForm() {
 let name = document.getElementById('name').value;
