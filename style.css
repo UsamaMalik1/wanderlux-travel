@@ -396,7 +396,14 @@ footer {
     position: relative;
 }
 
-/* MENU BUTTON (HIDDEN ON DESKTOP) */
+/* MENU */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+/* HAMBURGER BUTTON */
 .menu-btn {
     display: none;
     font-size: 26px;
@@ -405,14 +412,14 @@ footer {
     cursor: pointer;
 }
 
-/* DESKTOP MENU */
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
+/* ACTIVE LINK */
+.navbar a.active {
+    color: #0077b6;
+    font-weight: bold;
+    border-bottom: 2px solid #0077b6;
 }
 
-/* MOBILE */
+/* MOBILE VIEW */
 @media screen and (max-width: 768px) {
 
     .menu-btn {
@@ -426,7 +433,7 @@ footer {
         top: 60px;
         right: 10px;
         background: white;
-        padding: 10px;
+        padding: 15px;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         border-radius: 10px;
     }
