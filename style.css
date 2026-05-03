@@ -295,6 +295,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #0077b6;
     padding: 15px 20px;
     position: relative;
     z-index: 1000;
@@ -329,6 +330,7 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
+        color: #0077b6;
         top: 60px;
         right: 10px;
         width: 180px;
