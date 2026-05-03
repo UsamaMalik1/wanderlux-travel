@@ -291,7 +291,7 @@ footer {
 }
 
 
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -299,7 +299,7 @@ footer {
     padding: 15px 20px;
     position: relative;
     z-index: 1000;
-}
+} */
 
 .navbar ul {
     display: flex;
