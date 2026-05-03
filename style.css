@@ -196,58 +196,6 @@ padding: 15px;
 margin-top: 30px;
 }
 
-@media screen and (max-width: 768px) {
-
-nav {
-flex-direction: column;
-align-items: center;
-}
-
-nav ul {
-flex-direction: column;
-width: 100%;
-align-items: center;
-margin-top: 15px;
-padding: 0;
-}
-
-nav ul li {
-margin: 10px 0;
-}
-
-nav ul li a {
-display: block;
-width: 100%;
-text-align: center;
-padding: 10px;
-}
-
-.hero h2 {
-font-size: 32px;
-}
-
-.hero p {
-font-size: 18px;
-}
-
-.cards {
-grid-template-columns: 1fr;
-}
-
-.calculator,
-.form-section,
-.contact,
-.about {
-width: 95%;
-}
-
-}
-nav ul {
-display: flex;
-list-style: none;
-gap: 20px;
-flex-wrap: wrap;
-}
 * {
     margin: 0;
     padding: 0;
@@ -342,84 +290,36 @@ footer {
     padding: 15px;
 }
 
-@media screen and (max-width: 768px) {
-
-    nav {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 10px;
-    }
-
-    .hero h2 {
-        font-size: 28px;
-        padding: 10px;
-    }
-
-    .hero p {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-    .calculator,
-    .form-section,
-    .contact,
-    .about {
-        width: 95%;
-        margin: auto;
-    }
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 20px;
     background: white;
     position: relative;
+    z-index: 1000;
 }
 
-/* MENU */
 .navbar ul {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
-/* HAMBURGER BUTTON */
 .menu-btn {
     display: none;
-    font-size: 26px;
+    font-size: 28px;
     background: none;
     border: none;
     cursor: pointer;
 }
 
-/* ACTIVE LINK */
 .navbar a.active {
     color: #0077b6;
     font-weight: bold;
-    border-bottom: 2px solid #0077b6;
 }
 
-/* MOBILE VIEW */
 @media screen and (max-width: 768px) {
 
     .menu-btn {
@@ -433,12 +333,18 @@ footer {
         top: 60px;
         right: 10px;
         background: white;
-        padding: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 180px;
+        padding: 10px;
         border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 999;
     }
 
     .navbar ul.show {
         display: flex;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
     }
 }
