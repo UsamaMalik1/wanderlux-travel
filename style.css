@@ -259,21 +259,23 @@ body {
     line-height: 1.6;
 }
 
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0a3d62;
-    padding: 15px 30px;
+    flex-wrap: wrap;
 }
 
 nav h1 {
     color: white;
 }
 
+
 nav ul {
     display: flex;
     list-style: none;
+    gap: 20px;
 }
 
 nav ul li {
@@ -340,21 +342,47 @@ footer {
     padding: 15px;
 }
 
-@media(max-width:768px) {
+@media screen and (max-width: 768px) {
+
     nav {
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     nav ul {
         flex-direction: column;
-        margin-top: 10px;
+        width: 100%;
+        padding: 0;
     }
 
     nav ul li {
         margin: 10px 0;
     }
 
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
     .hero h2 {
-        font-size: 32px;
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .calculator,
+    .form-section,
+    .contact,
+    .about {
+        width: 95%;
+        margin: auto;
     }
 }
